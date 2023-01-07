@@ -15,6 +15,6 @@ func NewRestHandler(service port.UsersearchService) *RestHandler {
 	}
 }
 
-func (r *RestHandler) Get(ctx *fiber.Ctx) error {
+func (r *RestHandler) GetByUUID(ctx *fiber.Ctx) error {
 	return nil
 }

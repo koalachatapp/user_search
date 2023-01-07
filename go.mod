@@ -5,7 +5,6 @@ go 1.19
 require (
 	github.com/Shopify/sarama v1.37.2
 	github.com/bytedance/sonic v1.6.0
-	github.com/elastic/go-elasticsearch/v7 v7.17.7
 	github.com/gofiber/fiber/v2 v2.40.1
 )
 

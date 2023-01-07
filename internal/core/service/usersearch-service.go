@@ -16,10 +16,14 @@ func NewUsersearchService(repo port.UsersearchRepository) port.UsersearchService
 	}
 }
 
-func (s *usersearchService) Search(user entity.UserEntity) error {
+func (s *usersearchService) SearchByUUID(uuid string) error {
 	return nil
 }
 
 func (s *usersearchService) Save(user entity.UserEntity) error {
-	return nil
+	return s.repo.Save(user)
+}
+
+func (s *usersearchService) Delete(uuid string) error {
+	return s.repo.Delete(uuid)
 }

@@ -28,7 +28,7 @@ func main() {
 	app.Use(recover.New())
 	log.SetFlags(log.LstdFlags | log.Lmicroseconds)
 
-	app.Get("/", resthandler.Get)
+	app.Get("/get/uuid/:uuid", resthandler.GetByUUID)
 
 	app.Listen(":3020")
 }
